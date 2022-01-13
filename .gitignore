@@ -1,0 +1,15 @@
+# ignore all logs
+*.log
+
+## Where my API Keys are stores
+config.js
+
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon

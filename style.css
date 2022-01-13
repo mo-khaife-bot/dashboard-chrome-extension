@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 20px #242424;
+}
+
+main {
+  padding: 15px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1.time {
+  text-align: center;
+}
+
+div#crypto {
+  font-size: 1.5rem;
+}
+
+div#crypto > p {
+  margin: 5px;
+}
+
+div#crypto-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+div#crypto-details > span {
+  margin-left: 10px;
+}
+
+p#author {
+  font-size: 1.2rem;
+}
+
+a:link {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+p.photo-location {
+  margin-top: -10px;
+  font-size: 0.8rem;
+}
+.time {
+  font-size: 9rem;
+}
+
+#weather {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-top: -60px;
+}
+
+#weather > img {
+  width: 120px;
+  /* justify-content: space-between; */
+  /* margin-left: -100px; */
+}
+
+.weather-city {
+  width: 100%;
+  text-align: right;
+  margin: 0;
+  margin-top: -160px;
+
+  font-size: 1.2rem;
+}
+
+p.weather-temp {
+  margin-left: -20px;
+  font-size: 3rem;
+}
+
+span {
+  font-size: 1rem;
+}
+
+/* loader */
+.time-loader,
+.weather-loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #333;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.time-loader {
+  align-self: center;
+  width: 120px;
+}
+
+.quote {
+  align-self: center;
+  margin-top: -220px;
+}
+
+.quote > p {
+  border: 1px solid red;
+  margin-left: 270px;
+}
+
+/* 
+TODO time-loader size bigger
+TODO weather-loader place n correct place make it small or change animation style 
+TODO get football API 
+TODO get prayer Time API */
