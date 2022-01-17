@@ -88,7 +88,7 @@ p.photo-location {
   width: 100%;
   text-align: right;
   margin: 0;
-  margin-top: -160px;
+  margin-top: -140px;
 
   font-size: 1.2rem;
 }
@@ -96,6 +96,15 @@ p.photo-location {
 p.weather-temp {
   margin-left: -20px;
   font-size: 3rem;
+}
+
+p.weather-description {
+  width: 100%;
+  text-align: right;
+  margin: 0;
+  margin-top: -140px;
+
+  font-size: 1.4rem;
 }
 
 span {
@@ -133,7 +142,6 @@ span {
 }
 
 .quote > p {
-  border: 1px solid red;
   margin-left: 270px;
 }
 

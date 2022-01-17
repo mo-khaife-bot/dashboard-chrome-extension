@@ -117,12 +117,14 @@ navigator.geolocation.getCurrentPosition((position) => {
       return response.json();
     })
     .then((data) => {
+      console.log(data);
       completeWeather();
       document.getElementById("weather").innerHTML = `
         <img src="http://openweathermap.org/img/wn/${
           data.weather[0].icon
         }@2x.png" >
         <p class="weather-temp">${Math.round(data.main.temp)}˚C</p>
+        <p class="weather-description">${data.weather[0].description}</p>
         <p class="weather-city">${data.sys.country}, <span >${
         data.name
       }</span></p>`;
@@ -135,3 +137,9 @@ navigator.geolocation.getCurrentPosition((position) => {
 // TODO add prayer times API_KEY
 // TODO deploy
 // TODO practise parallel fetch requests (https://dmitripavlutin.com/javascript-fetch-async-await/)
+
+// contact talk talk about
+// scrimba discord about git remote repo manuel github vs command line
+// see pay budget for kape internships asap
+//  plan weekedn 2022 goals, jogging am gym evening, coffe bit / walk/ laundry  etc
+// food plan quinoa for week sweet potato where??
